@@ -19,5 +19,7 @@ public class LoginTest extends BaseTest {
         Login login = new Login(driver);
         login.clickLoginButton();
         login.as(uName,passwd);
+        // Assert.assertEquals(login.getLoginMessage(),"Logged in successfully","Validate login successful message");
+        // String logoutSuccessMessage = login.logout();
     }
 }
